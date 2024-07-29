@@ -23,11 +23,13 @@ class SignUpPage extends StatelessWidget {
           return BodySignUp(
             formKey: _formKey,
             function: null,
+            containerColor: ColorManager.eECE91,
           );
         } else if (state is SignUpAllFieldsAreFilled) {
           return BodySignUp(
             formKey: _formKey,
             function: () {},
+            containerColor: ColorManager.aBCF9F,
           );
         } else {
           return const SizedBox.shrink();
@@ -55,9 +57,11 @@ class BodySignUp extends StatelessWidget {
     super.key,
     required GlobalKey<State<StatefulWidget>> formKey,
     required this.function,
+    required this.containerColor,
   });
 
   Function? function;
+  final Color containerColor;
 
   @override
   Widget build(BuildContext context) {
@@ -68,7 +72,7 @@ class BodySignUp extends StatelessWidget {
           AuthBasicContainer(
             title: "Create new  Account! ",
             subtitle: "Please fill in the form to continue",
-            color: ColorManager.eECE91,
+            color: containerColor,
           ),
 
           SizedBox(height: 28.h),
