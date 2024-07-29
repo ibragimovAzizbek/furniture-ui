@@ -99,10 +99,18 @@ class _OnBoardingPageState extends State<OnBoardingPage> {
                 ),
                 ElevatedButton(
                   onPressed: () {
-                    pageCtx.nextPage(
-                      duration: const Duration(milliseconds: 300),
-                      curve: Curves.easeInOut,
-                    );
+                    if (currentIndex != 2) {
+                      pageCtx.nextPage(
+                        duration: const Duration(milliseconds: 300),
+                        curve: Curves.easeInOut,
+                      );
+                    } else {
+                      Navigator.pushNamedAndRemoveUntil(
+                        context,
+                        '/login',
+                        (route) => true,
+                      );
+                    }
                   },
                   style: ElevatedButton.styleFrom(
                     fixedSize: Size(114.w, 114.h),

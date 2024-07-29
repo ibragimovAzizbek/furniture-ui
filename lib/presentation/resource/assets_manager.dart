@@ -10,10 +10,12 @@ class AppIcons {
   static const String onBoardingIcon1 = "$iconPath/akar-icons_vr-ar.svg";
   static const String onBoardingIcon2 = "$iconPath/onBoardingIcon2.svg";
   static const String onBoardingIcon3 = "$iconPath/onBoardingIcon3.svg";
-  
+
+  static const String logoBlack = "$iconPath/logo_black.svg";
+
+  static const String googleLogo = "$iconPath/google.svg";
 }
 
 class ImageAssets {
   static const String certificate = "$imagePath/certificate.png";
-  
 }

@@ -7,6 +7,7 @@ class ColorManager {
   static Color textBlack = HexColor.fromHex("#1B262E");
   static Color black60 = HexColor.fromHex("#606D76");
   static Color black100 = HexColor.fromHex("#1B262E");
+  static Color c222222 = HexColor.fromHex("#222222");
 
   // White
   static Color bgWhite = HexColor.fromHex("#FFFFFF");
@@ -21,6 +22,19 @@ class ColorManager {
   static Color c999C92 = HexColor.fromHex("#999C92");
 
   static Color b68A41 = HexColor.fromHex("#B68A41");
+
+  static Color b4D5E0 = HexColor.fromHex("#B4D5E0");
+
+  static Color b4B6B5 = HexColor.fromHex("#B4B6B5");
+
+  static Color c897E73 = HexColor.fromHex("#897E73");
+
+  static Color f2E8DE = HexColor.fromHex("#F2E8DE");
+
+  static Color fF912F = HexColor.fromHex("#FF912F");
+
+  // Red
+  static Color eA592A = HexColor.fromHex("#EA592A");
 }
 
 extension HexColor on Color {

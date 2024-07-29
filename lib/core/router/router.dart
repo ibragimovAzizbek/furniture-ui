@@ -1,5 +1,6 @@
-
 import 'package:flutter/material.dart';
+import 'package:furniture/presentation/screens/auth/login_page.dart';
+import 'package:furniture/presentation/screens/auth/sign_up_page.dart';
 import 'package:furniture/presentation/screens/initPage/init_page.dart';
 import 'package:furniture/presentation/screens/onBoarding/on_boarding_page.dart';
 
@@ -18,8 +19,13 @@ class RouterCont {
         return navigator(const InitPage());
 
       case '/on_boarding':
-        return navigator( OnBoardingPage());
+        return navigator(const OnBoardingPage());
 
+      case '/login':
+        return navigator(const LoginPage());
+
+      case '/signup':
+        return navigator(const SignUpPage());
     }
     return null;
     // return null;
