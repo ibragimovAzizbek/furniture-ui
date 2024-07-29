@@ -46,7 +46,13 @@ class LoginPage extends StatelessWidget {
                 ),
               ),
               bgColor: ColorManager.eA592A,
-              function: () {},
+              function: () {
+                Navigator.pushNamedAndRemoveUntil(
+                  context,
+                  '/home',
+                  (route) => false,
+                );
+              },
             ),
             Padding(
               padding: EdgeInsets.symmetric(vertical: 7.h),
@@ -78,7 +84,13 @@ class LoginPage extends StatelessWidget {
                 ],
               ),
               bgColor: ColorManager.f2E8DE,
-              function: () {},
+              function: () {
+                Navigator.pushNamedAndRemoveUntil(
+                  context,
+                  '/home',
+                  (route) => false,
+                );
+              },
             ),
             SizedBox(height: 20.h),
             // Do u have not account button

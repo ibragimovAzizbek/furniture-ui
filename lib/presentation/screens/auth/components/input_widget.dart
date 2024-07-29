@@ -31,7 +31,6 @@ class InputWidget extends StatelessWidget {
         ),
         onChanged: (s) {
           itIsSignUp ? context.read<SignUpCubit>().checkFields() : {};
-          print("### EMAIL ###");
         },
         validator: (value) {
           if (value == null || value.isEmpty) {

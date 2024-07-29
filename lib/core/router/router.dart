@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:furniture/presentation/screens/auth/login_page.dart';
 import 'package:furniture/presentation/screens/auth/sign_up_page.dart';
+import 'package:furniture/presentation/screens/home/home_page.dart';
 import 'package:furniture/presentation/screens/initPage/init_page.dart';
 import 'package:furniture/presentation/screens/onBoarding/on_boarding_page.dart';
 
@@ -26,6 +27,9 @@ class RouterCont {
 
       case '/signup':
         return navigator(SignUpPage());
+
+      case '/home':
+        return navigator(const HomePage());
     }
     return null;
     // return null;

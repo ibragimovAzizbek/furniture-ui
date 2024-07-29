@@ -16,8 +16,13 @@ class AppIcons {
   static const String googleLogo = "$iconPath/google.svg";
 
   static const String bgElement = "$iconPath/Bg-Element.svg";
+  static const String homeLeadingIcon = "$iconPath/home_leading_icon.svg";
+  static const String oclock = "$iconPath/oclock.svg";
+  static const String search = "$iconPath/search.svg";
 }
 
 class ImageAssets {
-  static const String certificate = "$imagePath/certificate.png";
+  static const String homeLeadingIcon = "$imagePath/home_leading_icon.png";
+  static const String oclock = "$imagePath/oclock.png";
+  static const String search = "$imagePath/search.png";
 }

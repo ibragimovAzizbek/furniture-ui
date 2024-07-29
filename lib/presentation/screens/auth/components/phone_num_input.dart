@@ -39,7 +39,6 @@ class PhoneNumInput extends StatelessWidget {
         textInputAction: TextInputAction.done,
         onChanged: (s) {
           itIsSignUp ? context.read<SignUpCubit>().checkFields() : {};
-          print("### PHONE ###");
         },
         validator: (value) {
           if (value == null || value.isEmpty) {

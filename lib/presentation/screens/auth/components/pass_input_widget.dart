@@ -44,7 +44,6 @@ class PasswordInputWidget extends StatelessWidget {
         ),
         onChanged: (s) {
           itIsSignUp ? context.read<SignUpCubit>().checkFields() : {};
-          print("### PASS ###");
         },
         validator: (value) {
           if (value == null || value.isEmpty) {

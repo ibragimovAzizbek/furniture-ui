@@ -28,7 +28,13 @@ class SignUpPage extends StatelessWidget {
         } else if (state is SignUpAllFieldsAreFilled) {
           return BodySignUp(
             formKey: _formKey,
-            function: () {},
+            function: () {
+              Navigator.pushNamedAndRemoveUntil(
+                context,
+                '/home',
+                (route) => false,
+              );
+            },
             containerColor: ColorManager.aBCF9F,
           );
         } else {
