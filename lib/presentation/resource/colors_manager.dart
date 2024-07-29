@@ -35,6 +35,9 @@ class ColorManager {
 
   // Red
   static Color eA592A = HexColor.fromHex("#EA592A");
+
+  static Color eECE91 = HexColor.fromHex("#EECE91");
+  static Color aBCF9F = HexColor.fromHex("#ABCF9F");
 }
 
 extension HexColor on Color {

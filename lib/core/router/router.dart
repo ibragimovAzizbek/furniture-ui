@@ -25,7 +25,7 @@ class RouterCont {
         return navigator(const LoginPage());
 
       case '/signup':
-        return navigator(const SignUpPage());
+        return navigator(SignUpPage());
     }
     return null;
     // return null;

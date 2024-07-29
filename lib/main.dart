@@ -3,14 +3,14 @@ import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:furniture/core/router/router.dart';
 import 'package:furniture/cubits/login/login_cubit.dart';
+import 'package:furniture/cubits/signUp/sign_up_cubit.dart';
 
 void main() {
   runApp(
     MultiBlocProvider(
       providers: [
-        BlocProvider(
-          create: (context) => LoginCubit(),
-        ),
+        BlocProvider(create: (context) => LoginCubit()),
+        BlocProvider(create: (context) => SignUpCubit()),
       ],
       child: const MyApp(),
     ),

@@ -14,6 +14,8 @@ class AppIcons {
   static const String logoBlack = "$iconPath/logo_black.svg";
 
   static const String googleLogo = "$iconPath/google.svg";
+
+  static const String bgElement = "$iconPath/Bg-Element.svg";
 }
 
 class ImageAssets {
