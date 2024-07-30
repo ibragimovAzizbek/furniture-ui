@@ -2,6 +2,8 @@
 
 A new Flutter project.
 
+Bu yerda State management sifatida bloc(cubit)dan foydalanilgan. 
+
 ## Getting Started
 
 This project is a starting point for a Flutter application.
