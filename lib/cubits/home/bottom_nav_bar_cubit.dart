@@ -4,12 +4,10 @@ import 'package:furniture/cubits/home/bottom_nav_state.dart';
 class BottomNavBarCubit extends Cubit<BottomNavState> {
   BottomNavBarCubit() : super(BottomNavInitial());
 
-  int _selectedIndex = 0;
-
-  int get getIndex => _selectedIndex;
+  int selectedIndex = 0;
 
   void setIndex(int index) {
-    _selectedIndex = index;
+    selectedIndex = index;
     emit(BottomNavInitial());
   }
 }

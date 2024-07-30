@@ -23,6 +23,7 @@ class AppIcons {
   static const String bottomHome = "$iconPath/bottom_home.svg";
   static const String bottomHomeActive = "$iconPath/bottom_home_active.svg";
   static const String bottomLike = "$iconPath/bottom_like.svg";
+  static const String bottomLikeActive = "$iconPath/bottom_like_active.svg";
   static const String bottomBasic = "$iconPath/bottom_basic.svg";
   static const String bottomShop = "$iconPath/bottom_shop.svg";
   static const String bottomProfile = "$iconPath/bottom_profile.svg";
@@ -32,4 +33,5 @@ class ImageAssets {
   static const String homeLeadingIcon = "$imagePath/home_leading_icon.png";
   static const String oclock = "$imagePath/oclock.png";
   static const String search = "$imagePath/search.png";
+  static const String noImage = "$imagePath/no_image.png";
 }

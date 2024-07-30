@@ -23,7 +23,6 @@ class HomeBottomBar extends StatelessWidget {
               icon: SvgPicture.asset(AppIcons.bottomHome),
               activeIcon: SvgPicture.asset(
                 AppIcons.bottomHomeActive,
-                // theme: SvgTheme(currentColor: ColorManager.eA592A),
               ),
               label: '',
               backgroundColor: ColorManager.black100,
@@ -31,8 +30,7 @@ class HomeBottomBar extends StatelessWidget {
             BottomNavigationBarItem(
               icon: SvgPicture.asset(AppIcons.bottomLike),
               activeIcon: SvgPicture.asset(
-                AppIcons.bottomLike,
-                theme: SvgTheme(currentColor: ColorManager.eA592A),
+                AppIcons.bottomLikeActive,
               ),
               label: '',
               backgroundColor: ColorManager.black100,
@@ -62,7 +60,7 @@ class HomeBottomBar extends StatelessWidget {
               backgroundColor: ColorManager.black100,
             ),
           ],
-          currentIndex: context.read<BottomNavBarCubit>().getIndex,
+          currentIndex: context.watch<BottomNavBarCubit>().selectedIndex,
           onTap: (index) {
             context.read<BottomNavBarCubit>().setIndex(index);
           },

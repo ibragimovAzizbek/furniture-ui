@@ -8,6 +8,7 @@ class ColorManager {
   static Color black60 = HexColor.fromHex("#606D76");
   static Color black100 = HexColor.fromHex("#1B262E");
   static Color c222222 = HexColor.fromHex("#222222");
+  static Color c39352F = HexColor.fromHex("#39352F");
 
   // White
   static Color bgWhite = HexColor.fromHex("#FFFFFF");
@@ -43,8 +44,9 @@ class ColorManager {
 
   static Color d4D5DA = HexColor.fromHex("#D4D5DA");
 
+  static Color f5EFE5 = HexColor.fromHex("#F5EFE5");
 
-
+  static Color c9C907C = HexColor.fromHex("#9C907C");
 }
 
 extension HexColor on Color {

@@ -200,7 +200,7 @@ class HomeBody extends StatelessWidget {
                 return const FurnitureItemCard();
               },
             ),
-            SizedBox(height: 150.h),
+            SizedBox(height: 70.h),
           ],
         ),
       ),
