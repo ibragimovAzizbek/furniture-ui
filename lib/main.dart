@@ -2,6 +2,8 @@ import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:furniture/core/router/router.dart';
+import 'package:furniture/cubits/home/bottom_nav_bar_cubit.dart';
+import 'package:furniture/cubits/home/home_cubit.dart';
 import 'package:furniture/cubits/login/login_cubit.dart';
 import 'package:furniture/cubits/signUp/sign_up_cubit.dart';
 
@@ -11,6 +13,8 @@ void main() {
       providers: [
         BlocProvider(create: (context) => LoginCubit()),
         BlocProvider(create: (context) => SignUpCubit()),
+        BlocProvider(create: (context) => HomeCubit()),
+        BlocProvider(create: (context) => BottomNavBarCubit()),
       ],
       child: const MyApp(),
     ),

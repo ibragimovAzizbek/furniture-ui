@@ -29,7 +29,7 @@ class RouterCont {
         return navigator(SignUpPage());
 
       case '/home':
-        return navigator(const HomePage());
+        return navigator(HomePage());
     }
     return null;
     // return null;

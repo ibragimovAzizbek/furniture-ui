@@ -19,6 +19,13 @@ class AppIcons {
   static const String homeLeadingIcon = "$iconPath/home_leading_icon.svg";
   static const String oclock = "$iconPath/oclock.svg";
   static const String search = "$iconPath/search.svg";
+
+  static const String bottomHome = "$iconPath/bottom_home.svg";
+  static const String bottomHomeActive = "$iconPath/bottom_home_active.svg";
+  static const String bottomLike = "$iconPath/bottom_like.svg";
+  static const String bottomBasic = "$iconPath/bottom_basic.svg";
+  static const String bottomShop = "$iconPath/bottom_shop.svg";
+  static const String bottomProfile = "$iconPath/bottom_profile.svg";
 }
 
 class ImageAssets {
