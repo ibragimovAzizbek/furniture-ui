@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
+import 'package:furniture/presentation/resource/assets_manager.dart';
 import 'package:furniture/presentation/resource/colors_manager.dart';
 import 'package:furniture/presentation/screens/home/components/furniture_item_card.dart';
 import 'package:furniture/presentation/screens/home/components/title_and_text_button.dart';
@@ -63,15 +64,17 @@ class HomeBody extends StatelessWidget {
                   height: 286.h,
                   child: Container(
                     margin: EdgeInsets.only(bottom: 25.h),
+                    padding: EdgeInsets.all(80.w),
                     height: 261.h,
                     width: double.infinity,
                     decoration: BoxDecoration(
                       borderRadius: BorderRadius.circular(20.r),
                       color: ColorManager.eEF3E9,
                     ),
-                    child: Icon(
-                      Icons.image_outlined,
-                      size: 56.w,
+                    child: SizedBox(
+                      height: 48.h,
+                      width: 56.w,
+                      child: Image.asset(ImageAssets.noImage),
                     ),
                   ),
                 ),
@@ -105,15 +108,17 @@ class HomeBody extends StatelessWidget {
               text: "View All",
             ),
             Container(
+              padding: EdgeInsets.all(100.w),
               height: 379.h,
               width: double.infinity,
               decoration: BoxDecoration(
                 borderRadius: BorderRadius.circular(20.r),
                 color: ColorManager.eEF3E9,
               ),
-              child: Icon(
-                Icons.image_outlined,
-                size: 56.w,
+              child: Image.asset(
+                ImageAssets.noImage,
+                height: 50.h,
+                width: 50.w,
               ),
             ),
             SizedBox(height: 32.h),
@@ -140,14 +145,16 @@ class HomeBody extends StatelessWidget {
                         Container(
                           height: 129.h,
                           width: 129.w,
+                          padding: EdgeInsets.all(35.w),
                           margin: EdgeInsets.only(top: 14.h),
                           decoration: BoxDecoration(
                             borderRadius: BorderRadius.circular(120),
-                            color: ColorManager.d4D5DA,
+                            color: ColorManager.eEF3E9,
                           ),
-                          child: Icon(
-                            Icons.image_outlined,
-                            size: 56.w,
+                          child: Image.asset(
+                            ImageAssets.noImage,
+                            height: 50.h,
+                            width: 50.w,
                           ),
                         ),
                         SizedBox(height: 16.h),

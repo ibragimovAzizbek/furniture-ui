@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
+import 'package:furniture/presentation/resource/assets_manager.dart';
 import 'package:furniture/presentation/resource/colors_manager.dart';
 
 class FurnitureItemCard extends StatelessWidget {
@@ -12,11 +13,16 @@ class FurnitureItemCard extends StatelessWidget {
         Container(
           height: 182.h,
           width: 170.w,
+          padding: EdgeInsets.all(50.w),
           decoration: BoxDecoration(
-            color: Colors.grey[200],
+            color: ColorManager.eEF3E9,
             borderRadius: BorderRadius.circular(16.0),
           ),
-          child: Icon(Icons.image, size: 50.0.w),
+          child: Image.asset(
+            ImageAssets.noImage,
+            height: 50.h,
+            width: 50.w,
+          ),
         ),
         SizedBox(height: 8.h),
         Text(
